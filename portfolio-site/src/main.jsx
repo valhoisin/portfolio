@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import NotFound from "./error/NotFound.jsx";
 import Home from "./pages/Home.jsx";
 import Contacts from "./pages/Contacts.jsx";
+import ApiTestPage from "./pages/ApiTestPage.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: "contact",
         element: <Contacts />,
+      },
+      {
+        path: "apitest",
+        element: <ApiTestPage />,
       },
     ],
   },

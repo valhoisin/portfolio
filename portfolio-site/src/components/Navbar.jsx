@@ -9,11 +9,11 @@ const Navbar = () => {
           <div className="flex flex-1 items-center justify-between sm:items-stretch sm:justify-start">
             <div className="hidden sm:ml-6 sm:block w-full">
               <div className="flex justify-between w-full">
-                <div className="flex space-x-4">
+                <div className="space-x-4">
                   <Link
                     to="/"
                     aria-current="page"
-                    className="rounded-md cursor-pointer  px-3 py-2 hover:bg-white/5 text-sm font-medium text-white"
+                    className="rounded-md px-3 py-2 hover:bg-white/5 text-sm font-medium text-gray-300 hover:text-white"
                   >
                     Home
                   </Link>
@@ -22,6 +22,14 @@ const Navbar = () => {
                     className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white"
                   >
                     Contact
+                  </Link>
+                </div>
+                <div>
+                  <Link
+                    to="/apitest"
+                    className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white"
+                  >
+                    Axios Api Test
                   </Link>
                 </div>
               </div>
